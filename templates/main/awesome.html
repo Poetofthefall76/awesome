@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Awesome {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/libs/owl-carousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/libs/owl-carousel/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/fill.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/photo.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/pictures.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/gallery.css' %}">
+</head>
+<body>
+    {% block content %}
+
+<header class="header">
+    <div class="container">
+            <div class="header__logo">
+                <img src="{% static 'main/images/Logo.png' %}" alt="logo">
+                <h1 class="header__title"> SUAB Bygg och VVS</h1>
+            </div>
+
+        <div class="header__block">
+            <h2 class="header__title2"> SUAB Bygg och VVS</h2>
+            <p class="header__description">- ett företag som värnar om kunden och dennes intressen. Vårt mål är att alltid ha nöjda kunder,
+                <br> nöjda kunder lika vanliga kunder.</p>
+
+            <button class="header__button">Button</button>
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <div class="container">
+            <img class="main__img" src="{% static 'main/images/imageMain.png' %}" alt="">
+            <h2 class="main__title">Om oss</h2>
+            <p class="main__description"> SUAB Bygg och VVS — ett företag som värnar om kunden och dennes intressen. Vårt mål är att
+                <br> alltid ha nöjda kunder, nöjda kunder lika vanliga kunder.</p>
+            <p class="main__description2"> Vi bistår privatpersoner och företag i alla typer av byggentreprenader såsom tillbyggnad, fönsterförsäljning, badrumsrenovering, nybyggnation m.m.</p>
+
+        <div class="main__row">
+                <div class="main__block">
+                    <div class="main__one">
+                        <p class="main__descr">1</p>
+                    </div>
+
+                    <div class="main__text">
+                        <h3 class="main__title2">TILLBYGGNADER</h3>
+                        <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+               <div class="main__block">
+                   <div class="main__one">
+                       <p class="main__descr">1</p>
+                   </div>
+
+                   <div class="main__text">
+                       <h3 class="main__title2">TILLBYGGNADER</h3>
+                       <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                   </div>
+               </div>
+
+                    <div class="main__block">
+                        <div class="main__one">
+                            <p class="main__descr">1</p>
+                        </div>
+
+                        <div class="main__text">
+                            <h3 class="main__title2">TILLBYGGNADER</h3>
+                            <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+
+
+                   <div class="main__block">
+                       <div class="main__one">
+                           <p class="main__descr">1</p>
+                       </div>
+
+                       <div class="main__text">
+                           <h3 class="main__title2">TILLBYGGNADER</h3>
+                           <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                       </div>
+                   </div>
+            </div>
+    </div>
+</section>
+
+<section class="photo">
+            <div class="container">
+                            <img class="photo__img" src="{% static 'main/images/photo.png' %}" alt="photo">
+
+
+                <div class="photo__row">
+                    <div class="photo__contents">
+                        <img class="photo__block" src="{% static 'main/images/photo1.png' %}" alt="">
+                        <img class="photo__block" src="{% static 'main/images/photo2.png' %}" alt="">
+                    </div>
+
+                    <div class="photo__content">
+                        <img class="photo__block" src="{% static 'main/images/photo5.png' %}" alt="">
+                        <img class="photo__block" src="{% static 'main/images/photo6.png' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="photo__row1">
+                    <div class="photo__contents">
+                        <img class="photo__block" src="{% static 'main/images/photo3.png' %}" alt="">
+                        <img class="photo__block" src="{% static 'main/images/photo4.png' %}" alt="">
+                    </div>
+
+                    <div class="photo__content">
+                        <img class="photo__block" src="{% static 'main/images/photo5.png' %}" alt="">
+                        <img class="photo__block" src="{% static 'main/images/photo5.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="gallery">
+    <div class="container">
+        <h2 class="gallery__title">PÅGÅENDE PROJEKT</h2>
+
+        <div class="gallery__block">
+            <button class="gallery__btn">TOTALRENOVERING ATTEFALLSHUS</button>
+            <button class="gallery__btn">TIDIGARE SLUTFÖRDA PROJEKT</button>
+        </div>
+
+        <div class="gallery__block">
+            <button class="gallery__btn">HUSBYGGE - JÄRLÅSA</button>
+            <button class="gallery__btn">TILLBYGGNADER & POOL</button>
+        </div>
+
+        <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer ">
+                <div class="owl-stage">
+                    <div class="owl-item gallery__card">
+                        <img class="gallery__card-img" src="{% static 'main/images/gallery1.png' %}" id="1" alt="">
+                    </div>
+                    <div class="owl-item gallery__card">
+                        <img class="gallery__card-img active" src="{% static 'main/images/gallery2.png' %}" alt="">
+                    </div>
+                    <div class="owl-item gallery__card">
+                        <img class="gallery__card-img" src="{% static 'main/images/gallery3.png' %}" alt="">
+                    </div>
+                    <div class="owl-item gallery__card">
+                        <img class="gallery__card-img" src="{% static 'main/images/gallery4.png' %}" alt="">
+                    </div>
+                    <div class="owl-item gallery__card">
+                        <img class="gallery__card-img" src="{% static 'main/images/gallery5.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fill">
+    <div class="container">
+        <h2 class="fill__title">VILL DU ATT VI KONTAKTAR DIG? <br>
+            FYLL I FORMULÄRET NEDAN SÅ HÖR VI AV OSS TILL DIG</h2>
+
+        <form class="fill__form" action="" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input class="fill__btn" type="submit" value="SKICKA" />
+        </form>
+
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <img class="footer__image" src="{% static 'main/images/footer.png' %}" alt="">
+       <div class="footer__info">
+           <div class="footer__block">
+               <h3 class="footer__title">Logotype</h3>
+               <div class="footer__icons">
+                   <img src="{% static 'main/images/icon1.png' %}" alt="facebook">
+                   <img src="{% static 'main/images/icon2.png' %}" alt="instagram">
+                   <img src="{% static 'main/images/icon3.png' %}" alt="telegram">
+                   <img src="{% static 'main/images/icon4.png' %}" alt="whatsapp">
+               </div>
+               <p class="footer__descr">Lorem ipsum Lorem ipsum</p>
+           </div>
+
+           <div class="footer__contact">
+               <h3 class="footer__title">Contact us</h3>
+               <p class="footer__description">Phone number: +996 706 05 02 03</p>
+               <p class="footer__description">Adress: Ibraimova street 103</p>
+               <p class="footer__description3">E-mail: loremipsum@gmail.com</p>
+           </div>
+       </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript" src="{% static 'main/js/jquery-3.6.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'main/libs/owl-carousel/owl.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'main/js/main.js' %}"></script>
+
+    {% endblock %}
+</body>
+</html>
