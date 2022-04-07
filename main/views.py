@@ -26,8 +26,8 @@ class MainPageView(CreateView, ListView):
         return super().form_valid(form=form)
 
 
-def index(request):
-    return render(request, "main/test_page.html")
+# def index(request):
+#     return render(request, "main/test_page.html")
 
 
 # def new_page(request):
