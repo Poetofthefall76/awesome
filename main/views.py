@@ -9,7 +9,7 @@ from main.forms import QuestionForm
 
 
 class MainPageView(CreateView, ListView):
-    template_name = "main/awesome.html"
+    template_name = "main/index.html"
     model = models.Question
     success_url = "/"
     form_class = QuestionForm
@@ -26,8 +26,21 @@ class MainPageView(CreateView, ListView):
         return super().form_valid(form=form)
 
 
-class Image(ListView):
-    model = models.Image
+def index(request):
+    return render(request, "main/test_page.html")
 
-    def get_queryset(self):
-        return models.Image.objects.all()
+
+# def new_page(request):
+#     return render(request, "main/test_page.html")
+#
+#
+# def new_page(request):
+#     return render(request, "main/test_page.html")
+#
+#
+# def new_page(request):
+#     return render(request, "main/test_page.html")
+#
+#
+# def new_page(request):
+#     return render(request, "main/test_page.html")

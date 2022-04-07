@@ -1,5 +1,5 @@
 .fill{
-    padding: 100px 210px;
+    padding: 100px 0;
     background: #E5E5E5;
 }
 
@@ -18,7 +18,17 @@
 .fill__form{
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
 }
+ @media (max-width: 1110px) {
+     .fill__form {
+         width: 80%;
+         margin: 0 auto;
+     }
+     
+ }
+
+
 
 .fill__input{
     font-family: 'Roboto', sans-serif;
@@ -50,6 +60,7 @@
 }
 
 .fill__btn{
+    margin-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -58,12 +69,27 @@
     text-align: center;
     color: #FFFFFF;
     background: #1F1C41;
-    width: 400px;
     height: 80px;
-    padding: 29px 158px;
-    display: block;
+    width: 400px;
+}
+.fill_btn {
     margin-top: 100px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+    width:400px;
+    height: 80px;
+    margin: 0 auto;
+}
+@media (max-width: 472px){
+    .fill_btn {
+        margin-top: 100px;
+        width: 260px;
+        height: 65px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 472px){
+    .fill__btn {
+        width: 260px;
+        height: 65px;
+        margin: 0 auto;
+    }
 }

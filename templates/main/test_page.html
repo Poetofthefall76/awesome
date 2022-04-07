@@ -1,0 +1,201 @@
+{% extends 'main/origin.html' %}
+{% load static %}
+
+
+{% block title %}Yeeeeeeaaah{% endblock %}
+
+{% block content %}
+<header class="header">
+    <div class="container">
+            <div class="header__logo">
+                <img src="{{ MEDIA_URL }}/Logo.png" alt="logo">
+                <h1 class="header__title"> SUAB Bygg och VVS</h1>
+            </div>
+
+        <div class="header__block">
+            <h2 class="header__title2"> SUAB Bygg och VVS</h2>
+            <p class="header__description">- ett företag som värnar om kunden och dennes intressen. Vårt mål är att alltid ha nöjda kunder,
+                <br> nöjda kunder lika vanliga kunder.</p>
+                    <a href="">
+                        <button class="header__button">Button</button>
+                    </a>
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <img class="main__img" src="{{ MEDIA_URL }}/imageMain.png" alt="">
+    <div class="container">
+            <h2 class="main__title">Om oss</h2>
+            <p class="main__description"> SUAB Bygg och VVS — ett företag som värnar om kunden och dennes intressen. Vårt mål är att
+                <br> alltid ha nöjda kunder, nöjda kunder lika vanliga kunder.</p>
+            <p class="main__description2"> Vi bistår privatpersoner och företag i alla typer av byggentreprenader såsom tillbyggnad, fönsterförsäljning, badrumsrenovering, nybyggnation m.m.</p>
+
+        <div class="main__row">
+                <div class="main__block">
+                    <div class="main__one">
+                        <p class="main__descr">1</p>
+                    </div>
+
+                    <div class="main__text">
+                        <h3 class="main__title2">TILLBYGGNADER</h3>
+                        <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                    </div>
+                </div>
+
+               <div class="main__block">
+                   <div class="main__one">
+                       <p class="main__descr">1</p>
+                   </div>
+
+                   <div class="main__text">
+                       <h3 class="main__title2">TILLBYGGNADER</h3>
+                       <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                   </div>
+               </div>
+
+                    <div class="main__block">
+                        <div class="main__one">
+                            <p class="main__descr">1</p>
+                        </div>
+
+                        <div class="main__text">
+                            <h3 class="main__title2">TILLBYGGNADER</h3>
+                            <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+
+
+                   <div class="main__block">
+                       <div class="main__one">
+                           <p class="main__descr">1</p>
+                       </div>
+
+                       <div class="main__text">
+                           <h3 class="main__title2">TILLBYGGNADER</h3>
+                           <p class="main__descr2">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                       </div>
+                   </div>
+            </div>
+    </div>
+</section>
+
+<section class="photo">
+            <div class="container">
+                            <img class="photo__img" src="{{ MEDIA_URL }}/photo.png" alt="photo">
+
+                <div class="photo__inner">
+                    <div class="photo__row">
+                        <div class="photo__contents">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo1.png" alt="">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo2.png" alt="">
+                        </div>
+
+                        <div class="photo__content">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo5.png" alt="">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo6.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="photo__row1">
+                        <div class="photo__contents">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo3.png" alt="">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo4.png" alt="">
+                        </div>
+
+                        <div class="photo__content">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo5.png" alt="">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/photo5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="gallery">
+    <div class="container">
+        <h2 class="gallery__title">PÅGÅENDE PROJEKT</h2>
+        <div class="gallery_inner">
+            <div class="gallery__block">
+                <button class="gallery__btn">TOTALRENOVERING ATTEFALLSHUS</button>
+                <button class="gallery__btn">TIDIGARE SLUTFÖRDA PROJEKT</button>
+            </div>
+
+            <div class="gallery__block">
+                <button class="gallery__btn">HUSBYGGE - JÄRLÅSA</button>
+                <button class="gallery__btn">TILLBYGGNADER & POOL</button>
+            </div>
+        </div>
+
+
+        <div class="owl-carousel owl-theme owl-loaded gallery__carousel">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item gallery__card">
+                        <img class="gallery__card-img" src="{{ MEDIA_URL }}/gallery1.png" alt="placeholder">
+                    </div>
+                    <div class="owl-item team__card">
+                        <img class="gallery__card-img" src="{{ MEDIA_URL }}/gallery2.png" alt="placeholder">
+                    </div>
+                    <div class="owl-item team__card">
+                        <img class="gallery__card-img" src="{{ MEDIA_URL }}/gallery3.png" alt="placeholder">
+                    </div>
+                    <div class="owl-item team__card">
+                        <img class="gallery__card-img" src="{{ MEDIA_URL }}/gallery4.png" alt="placeholder">
+                    </div>
+                    <div class="owl-item team__card">
+                        <img class="gallery__card-img" src="{{ MEDIA_URL }}/gallery5.png" alt="placeholder">
+                    </div>
+                </div>
+            </div>
+            <div class="owl-dots" id="dots">
+                <div class="gallery__dot owl-dot active"><span></span></div>
+                <div class="gallery__dot owl-dot"><span></span></div>
+                <div class="gallery__dot owl-dot"><span></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fill">
+    <div class="container">
+        <h2 class="fill__title">VILL DU ATT VI KONTAKTAR DIG? <br>
+            FYLL I FORMULÄRET NEDAN SÅ HÖR VI AV OSS TILL DIG</h2>
+
+        <form class="fill__form" action="">
+            <input class="fill__input" type="text" name="name" placeholder="NAMN">
+            <input class="fill__input" type="email" name="email" placeholder="EMAIL">
+            <input class="fill__text" name="info" placeholder="MEDDELANDE"/>
+        </form>
+        <div class="fill_btn">
+            <button class="fill__btn">SKICKA</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+    <img class="footer__image" src="{{ MEDIA_URL }}/footer.png" alt="">
+    <div class="container">
+       <div class="footer__info">
+           <div class="footer__block">
+               <h3 class="footer__title">Logotype</h3>
+               <div class="footer__icons">
+                   <img src="{{ MEDIA_URL }}/icon1.png" alt="facebook">
+                   <img src="{{ MEDIA_URL }}/icon2.png" alt="instagram">
+                   <img src="{{ MEDIA_URL }}/icon3.png" alt="telegram">
+                   <img src="{{ MEDIA_URL }}/icon4.png" alt="whatsapp">
+               </div>
+               <p class="footer__descr">Lorem ipsum Lorem ipsum</p>
+           </div>
+
+           <div class="footer__contact">
+               <h3 class="footer__title">Contact us</h3>
+               <p class="footer__description">Phone number: +996 706 05 02 03</p>
+               <p class="footer__description">Adress: Ibraimova street 103</p>
+               <p class="footer__description3">E-mail: loremipsum@gmail.com</p>
+           </div>
+       </div>
+    </div>
+</section>
+{% endblock %}

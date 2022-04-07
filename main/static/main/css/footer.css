@@ -9,13 +9,22 @@
 }
 
 .footer__block{
-    margin-left: 240px;
+    text-align: center;
 }
 
 .footer__info{
     display: flex;
     column-gap: 227px;
     margin-top: 58px;
+    text-align: end;
+}
+@media (max-width: 750px) {
+    .footer__info {
+        padding-top: 55px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
 
 .footer__icons{
