@@ -26,21 +26,21 @@ class MainPageView(CreateView, ListView):
         return super().form_valid(form=form)
 
 
-# def index(request):
-#     return render(request, "main/test_page.html")
+def completed(request):
+    return render(request, "main/completed.html")
 
 
-# def new_page(request):
-#     return render(request, "main/test_page.html")
-#
-#
-# def new_page(request):
-#     return render(request, "main/test_page.html")
-#
-#
-# def new_page(request):
-#     return render(request, "main/test_page.html")
-#
-#
-# def new_page(request):
-#     return render(request, "main/test_page.html")
+def renovation(request):
+    return render(request, "main/renovation.html")
+
+
+def projects(request):
+    return render(request, "main/projects.html")
+
+
+def house_construction(request):
+    return render(request, "main/house_construction.html")
+
+
+def extensions(request):
+    return render(request, "main/extensions.html")

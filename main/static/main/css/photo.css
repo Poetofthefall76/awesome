@@ -41,3 +41,8 @@
 .photo__contents{
     margin-bottom: 50px;
 }
+@media (max-width:610px){
+    .photo {
+        display:none
+    }
+}

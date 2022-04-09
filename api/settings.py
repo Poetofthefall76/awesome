@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+import sys
+from django.conf import settings
+
 from pathlib import Path
 
 ROOT_PATH = os.path.dirname(__file__)
@@ -27,12 +30,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ovxd^)n@530a)5wf1gz_bsma++k171f_x!$w-l1p2a))+knlyp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
+    # 'localhost',
+    # '127.0.0.1',
+    "*"
 ]
+
+# settings.configure(
+#     DEBUG=DEBUG,
+#     SECRET_KEY=SECRET_KEY,
+#     ROOT_URLCONF=__name__,
+# )
 
 
 # Application definition

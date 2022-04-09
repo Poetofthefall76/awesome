@@ -2,7 +2,7 @@
 {% load static %}
 
 
-{% block title %}Awesome{% endblock %}
+{% block title %}SUAB Bygg och VVS{% endblock %}
 
 {% block content %}
 <header class="header">
@@ -16,7 +16,7 @@
             <h2 class="header__title2"> SUAB Bygg och VVS</h2>
             <p class="header__description">- ett företag som värnar om kunden och dennes intressen. Vårt mål är att alltid ha nöjda kunder,
                 <br> nöjda kunder lika vanliga kunder.</p>
-                    <a href="">
+                    <a href="{% url 'main:completed' %}">
                         <button class="header__button">Button</button>
                     </a>
         </div>
@@ -83,7 +83,7 @@
 <section class="photo">
             <div class="container">
                             <img class="photo__img" src="{{ MEDIA_URL }}/photo.png" alt="photo">
-
+    //
                 <div class="photo__inner">
                     <div class="photo__row">
                         <div class="photo__contents">
@@ -95,6 +95,7 @@
                             <img class="photo__block" src="{{ MEDIA_URL }}/photo5.png" alt="">
                             <img class="photo__block" src="{{ MEDIA_URL }}/photo6.png" alt="">
                         </div>
+
                     </div>
 
                     <div class="photo__row1">
@@ -105,7 +106,7 @@
 
                         <div class="photo__content">
                             <img class="photo__block" src="{{ MEDIA_URL }}/photo5.png" alt="">
-                            <img class="photo__block" src="{{ MEDIA_URL }}/photo5.png" alt="">
+                            <img class="photo__block" src="{{ MEDIA_URL }}/wing.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -117,13 +118,13 @@
         <h2 class="gallery__title">PÅGÅENDE PROJEKT</h2>
         <div class="gallery_inner">
             <div class="gallery__block">
-                <button class="gallery__btn">TOTALRENOVERING ATTEFALLSHUS</button>
-                <button class="gallery__btn">TIDIGARE SLUTFÖRDA PROJEKT</button>
+                <a href="{% url 'main:renovation' %}"> <button class="gallery__btn">TOTALRENOVERING ATTEFALLSHUS</button> </a>
+                <a href="{% url 'main:projects' %}"> <button class="gallery__btn">TIDIGARE SLUTFÖRDA PROJEKT</button> </a>
             </div>
 
             <div class="gallery__block">
-                <button class="gallery__btn">HUSBYGGE - JÄRLÅSA</button>
-                <button class="gallery__btn">TILLBYGGNADER & POOL</button>
+                <a href="{% url 'main:house_construction' %}"> <button class="gallery__btn">HUSBYGGE - JÄRLÅSA</button> </a>
+                <a href="{% url 'main:extensions' %}"> <button class="gallery__btn">TILLBYGGNADER & POOL</button> </a>
             </div>
         </div>
 

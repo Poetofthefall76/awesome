@@ -9,7 +9,7 @@ owl.owlCarousel({
         768 : {
             items: 2
         },
-        300 : {
+        278 : {
             items: 1,
             stagePadding: 50
         }

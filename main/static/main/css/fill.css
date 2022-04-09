@@ -81,15 +81,17 @@
 @media (max-width: 472px){
     .fill_btn {
         margin-top: 100px;
-        width: 260px;
-        height: 65px;
+        width: 200px;
+        height: 45px;
         margin: 0 auto;
+
     }
 }
 @media (max-width: 472px){
     .fill__btn {
-        width: 260px;
-        height: 65px;
-        margin: 0 auto;
+        width: 200px;
+        height: 45px;
+        margin-top:100px;
+        border-radius:9px
     }
 }
