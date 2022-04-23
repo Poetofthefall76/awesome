@@ -155,9 +155,9 @@ STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 #     # (os.path.join(BASE_DIR, 'static', 'media'))
 # ]
 
-STATICFILES_DIRS = [
+STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-]
+)
 
 MEDIA_URL = "/media/"
 
