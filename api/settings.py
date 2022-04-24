@@ -21,6 +21,7 @@ ROOT_PATH = os.path.dirname(__file__)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -106,6 +107,7 @@ DATABASES = {
         'PASSWORD': 'foxcatcher77',
         'PORT': '5432',
         'HOST': '23.22.130.173'
+        # 'HOST': 'localhost'
     }
 }
 
@@ -147,18 +149,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-#     # (os.path.join(BASE_DIR, 'static', 'media'))
-# ]
+# STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-)
+]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles")]
+
+# STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = os.path.join(BASE_DIR / "staticfiles")
+
+# STATIC_ROOT = BASE_DIR / "staticfiles"
 
 MEDIA_URL = "/media/"
 

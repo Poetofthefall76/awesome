@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+@media (max-width: 1100px) {
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .container {
+        max-width: 90%;
+    }
+
+}
+@media (max-width: 615px){
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 472px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+@media (max-width:350px) {
+    .container {
+        width:90%
+    }
+}
