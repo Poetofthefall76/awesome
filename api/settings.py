@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ovxd^)n@530a)5wf1gz_bsma++k171f_x!$w-l1p2a))+knlyp'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
@@ -58,7 +58,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic', #new
+    'whitenoise.runserver_nostatic',
+    # 'main',
 ]
 
 MIDDLEWARE = [
@@ -102,12 +103,12 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sweden_db',
-        'USER': 'poet',
-        'PASSWORD': 'foxcatcher77',
-        'PORT': '5432',
-        'HOST': 'swedenproject.herokuapp.com'
-        # 'HOST': 'localhost'
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'PORT': os.environ.get('DB_PORT'),
+        'HOST': os.environ.get('DB_HOST'),
+        # 'HOST': 'swedenproject.herokuapp.com'
     }
 }
 
